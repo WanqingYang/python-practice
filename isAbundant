@@ -1,0 +1,23 @@
+def isAbundant(num):
+  if num == 1:
+    return False
+  upper = num // 2 + 1
+  divisorSum = 0
+  for i in range(1, upper):
+    if num % i == 0:
+      divisorSum += i
+  return num < divisorSum
+
+print("if 1 is abundant: ", isAbundant(1))
+print("if 2 is abundant: ", isAbundant(2))
+print("if 3 is abundant: ", isAbundant(3))
+print("if 4 is abundant: ", isAbundant(4))
+print("if 5 is abundant: ", isAbundant(5))
+print("if 6 is abundant: ", isAbundant(6))
+print("if 7 is abundant: ", isAbundant(7))
+print("if 8 is abundant: ", isAbundant(8))
+print("if 9 is abundant: ", isAbundant(9))
+print("if 10 is abundant: ", isAbundant(10))
+print("if 12 is abundant: ", isAbundant(12))
+print("if 20 is abundant: ", isAbundant(20))
+
